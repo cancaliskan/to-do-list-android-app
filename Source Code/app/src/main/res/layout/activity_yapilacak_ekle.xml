@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context="com.example.kamran.bluewhite.yapilacakEkle">
+
+    <LinearLayout
+        android:id="@+id/yapilacakEkle_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/timg"
+        android:orientation="vertical">
+
+        <customfonts.MyEditText
+            android:id="@+id/yapilacakBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#0000"
+            android:hint="Başlık Giriniz"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#ADCCE2"
+            android:textColorHint="#ADCCE2"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/yapilacakAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#0000"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:hint="Açıklama Giriniz (İsteğe Bağlı)"
+            android:textColor="#ADCCE2"
+            android:textColorHint="#ADCCE2"
+            android:textSize="16dp"
+            android:padding="16dp"
+            />
+
+        <Switch
+            android:id="@+id/yapilacakHatirlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:text="Hatırlat"
+            android:textColor="#ADCCE2"
+            android:textColorHint="#ADCCE2"
+            android:theme="@style/SwitchTheme" />
+
+        <customfonts.MyTextView
+            android:id="@+id/tarihSecButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/angle"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Tarih Seç"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <customfonts.MyTextView
+            android:id="@+id/saatSecButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/angle"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Saat Seç"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <customfonts.MyTextView
+            android:id="@+id/yapilacakEkleButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/angle"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Kaydet"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

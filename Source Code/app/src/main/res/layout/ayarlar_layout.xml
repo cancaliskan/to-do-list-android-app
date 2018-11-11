@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timg">
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="37dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/linearLayout">
+                <ImageView
+                    android:id="@+id/sback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/bilgileriGuncelleLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <customfonts.MyEditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:hint="Tam İsim (Can Çalışkan)"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <customfonts.MyEditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:hint="E-Posta"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <customfonts.MyEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:hint="Parola"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <customfonts.MyTextView
+                android:id="@+id/guncelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/angle"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Güncelle"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <customfonts.MyTextView
+                android:id="@+id/parolaDegistir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/angle"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Parola Değiştir"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+     <!--   <LinearLayout android:id="@+id/parolaGuncelleLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <customfonts.MyEditText
+                android:textSize="16dp"
+                android:id="@+id/eskiParola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parola"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <customfonts.MyEditText
+                android:textSize="16dp"
+                android:id="@+id/yeniParola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parola"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <customfonts.MyEditText
+                android:textSize="16dp"
+                android:id="@+id/yeniParolaTekrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parola"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+        </LinearLayout>-->
+
+
+    </RelativeLayout>
+</FrameLayout>
